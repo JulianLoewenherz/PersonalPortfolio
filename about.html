@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body class="aboutBody">
+    <nav id="aboutNav">
+        <ul id="links">
+            <li><a href="index.html">home page</a></li>
+            <li><a href="about.html">about me</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="resume.html">resume</a></li>
+            <li><a href="contact.html">contact info</a></li>
+        </ul>
+    </nav>
+
+<div class="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col1">
+                <img src="background.png">
+            </div>
+            <div class="about-col2">
+                <h1 id="aboutTitle">About me</h1>
+                <pre>
+
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, similique?
+
+Lorem ipsum dolor sit amet.
+
+Lorem ipsum dolor sit amet consectetur.
+
+a;sdlkfja;sdfklj
+                </pre>
+                <div class="tabtitles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tabContents activeTab" id="skills">
+                    <ul>
+                        <li><span>skill1</span><br>thing two</li>
+                        <li><span>skill2</span><br>thing two</li>
+                        <li><span>skill3</span><br>thing two</li>
+                    </ul>
+                </div>
+                <div class="tabContents" id="experience">
+                    <ul>
+                        <li><span>experience1</span><br>thing two</li>
+                        <li><span>experience2</span><br>thing two</li>
+                        <li><span>experience3</span><br>thing two</li>
+                    </ul>
+                </div>
+                <div class="tabContents" id="education">
+                    <ul>
+                        <li><span>education1</span><br>thing two</li>
+                        <li><span>education2</span><br>thing two</li>
+                        <li><span>education3</span><br>thing two</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<script src="script.js"></script>
+
+</body>
+</html>
