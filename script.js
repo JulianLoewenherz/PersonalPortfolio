@@ -12,6 +12,20 @@ function opentab(tabname){
     document.getElementById(tabname).classList.add("activeTab");
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    const preTags = document.querySelectorAll('#introText pre');
+    const headers = document.querySelectorAll('#introText h3');
+
+    preTags.forEach((pre, index) => {
+        pre.addEventListener('mouseover', () => {
+            headers[index].classList.add('highlighted');
+        });
+        pre.addEventListener('mouseout', () => {
+            headers[index].classList.remove('highlighted');
+        });
+    });
+});
+
 
 // making the background change on click on the contact page
 const button1 = document.querySelector("#button1");
@@ -30,4 +44,5 @@ function changeBackground(){
     }
 
 }
+
 

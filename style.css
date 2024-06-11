@@ -47,12 +47,17 @@ nav ul li a{
 
 nav ul li a:hover {
     text-decoration: underline;
-    text-decoration-color:rgb(88, 154, 211);
+    text-decoration-color:rgb(112, 189, 208);
     text-decoration-thickness:5px;
   }
 
 #introText{
     margin-top:80px;
+}
+
+.highlighted {
+    color:rgb(112, 189, 208);
+    translate: 20px 0px;
 }
 
 
@@ -343,19 +348,19 @@ p {
     padding-bottom:20px;
 }
 
-
-.resumerow{
-    display:flex;
-    justify-content:space-between;
+.resumeContainer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    min-height: 100vh; 
+    padding: 20px; 
+    box-sizing: border-box; 
 }
 
-.resume-col1{
-    flex-basis:0%;
-
-}
-.resume-col2{
-    flex-basis:50%;
+#resumetitle{
+    font-size:40px;
 }
 
-
-
+#linky {
+    text-decoration:none!important;
+}
