@@ -86,7 +86,7 @@ nav ul li a:hover {
 .row {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allow wrapping */
+    flex-wrap: nowrap; /* Ensure items don't wrap by default */
 }
 
 .about-col1 {
@@ -96,13 +96,13 @@ nav ul li a:hover {
 }
 
 #hikeimg {
-    max-width: 80%; 
+    max-width: 100%; 
     height: auto;
     max-height: 300px; /* Add a max-height to control image size */
 }
 
 .about-col2 {
-    flex-basis: 70%;
+    flex-basis: 65%; /* Reduce to provide better spacing */
     margin: 2vw; 
     margin-top: 20px;
     font-size: 1.2vw; 
@@ -377,12 +377,13 @@ p {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .row {
-        flex-direction: column;
+        flex-wrap: wrap; /* Ensure items wrap on smaller screens */
     }
 
     .about-col1, .about-col2 {
+        flex-basis: 100%;
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -394,7 +395,7 @@ p {
     }
 
     .about-col2 {
-        font-size: 2.5vw; /* Increase font size on smaller screens */
+        font-size: 2vw; /* Adjust font size for better readability */
     }
 
     .big-div {
@@ -406,8 +407,9 @@ p {
     }
 
     #indexNav {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row; /* Keep navbar items horizontal */
+        flex-wrap: wrap; /* Allow wrapping if necessary */
+        justify-content: center; /* Center items */
     }
 
     #name {
@@ -415,40 +417,41 @@ p {
     }
 
     nav ul {
-        flex-direction: column; /* Change navbar items to column layout */
-        align-items: center;
+        flex-direction: row; /* Keep navbar items horizontal */
+        flex-wrap: wrap; /* Allow wrapping if necessary */
+        justify-content: center; /* Center items */
     }
 
     nav ul li {
-        margin: 5px 0; /* Add margin between items */
+        margin: 5px; /* Add margin between items */
     }
 
     nav ul li a {
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
 
     #introText {
-        font-size: 3vw;
-    }
-
-    .tab-links {
-        font-size: 3vw;
-    }
-
-    .tabContents ul li span {
         font-size: 2.5vw;
     }
 
+    .tab-links {
+        font-size: 2.5vw;
+    }
+
+    .tabContents ul li span {
+        font-size: 2vw;
+    }
+
     .linktext {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     #gittxt, #hacktext {
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 
     .title-div {
-        font-size: 3.5vw;
+        font-size: 2.5vw;
     }
 
     .resumeContainer {
@@ -456,31 +459,6 @@ p {
     }
 
     #resumetitle {
-        font-size: 6vw;
-    }
-}
-
-@media (max-width: 480px) {
-    #name {
-        width: 50%;
-        font-size: max(2vw, 16px);
-    }
-
-    .navbar ul {
-        display: block;
-        text-align: center;
-    }
-
-    #header {
-        background-size: 80%;
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    #aboutNav ul {
-        flex-direction: column;
-        align-items: center;
+        font-size: 5vw;
     }
 }
