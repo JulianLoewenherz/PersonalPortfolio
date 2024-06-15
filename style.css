@@ -33,7 +33,7 @@ body {
 #name {
     width: 25%;
     font-size: 4vw;  
-    margin-right:10%;
+    margin-right: 10%;
 }
 
 nav ul {
@@ -43,8 +43,8 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
     list-style: none;
+    margin: 0 5px;
 }
 
 nav ul li a {
@@ -86,6 +86,7 @@ nav ul li a:hover {
 .row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping */
 }
 
 .about-col1 {
@@ -97,6 +98,7 @@ nav ul li a:hover {
 #hikeimg {
     max-width: 80%; 
     height: auto;
+    max-height: 300px; /* Add a max-height to control image size */
 }
 
 .about-col2 {
@@ -385,6 +387,16 @@ p {
         margin-right: 10px;
     }
 
+    #hikeimg {
+        max-width: 100%;
+        height: auto;
+        max-height: 200px; /* Add a max-height to control image size */
+    }
+
+    .about-col2 {
+        font-size: 2.5vw; /* Increase font size on smaller screens */
+    }
+
     .big-div {
         margin: 10px 0;
     }
@@ -400,6 +412,15 @@ p {
 
     #name {
         font-size: 6vw;
+    }
+
+    nav ul {
+        flex-direction: column; /* Change navbar items to column layout */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Add margin between items */
     }
 
     nav ul li a {
