@@ -466,22 +466,6 @@ p {
     }
 }
 
-@media (max-width: 480px) {
-    #introText {
-        margin-top: 10vw; 
-    }
-
-    #introText, #introText h3, #introText pre {
-        opacity: 0.4; 
-    }
-
-    
-    #introText:hover, #introText h3:hover, #introText pre:hover {
-        opacity: 1; 
-    }
-}
-
-
 #introText, #introText h3, #introText pre {
     opacity: 0.8; /
 }
@@ -491,6 +475,24 @@ p {
     opacity: 1; 
 }
 
+@media (max-width: 480px) {
+    #introText {
+        margin-top: 10vw; 
+    }
+
+    #introText, #introText, #introText pre {
+        opacity: 0.4; 
+    }
+
+    
+    #introText:hover, #introText, #introText pre:hover {
+        opacity: 1; 
+    }
+}
+
+
+
+
 /* Tooltip */
 .tooltip {
     display: none;
@@ -499,7 +501,7 @@ p {
     color: #fff;
     padding: 5px;
     border-radius: 5px;
-    font-size: 1vw;
+    font-size: 2vw;
     z-index: 1000;
 }
 
