@@ -18,7 +18,7 @@ body {
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: contain;
-    padding-top: 30vh; /* Increase padding to move the text down */
+    padding-top: 50vh; /* Increase padding to move the text down */
 }
 
 .indexcontainer {
@@ -62,7 +62,6 @@ nav ul li a:hover {
 }
 
 #introText {
-    margin-top: 5vw;
     font-size: 1.4vw;
 }
 
@@ -467,11 +466,7 @@ p {
 
 /* Additional margin specifically for mobile view to avoid overlap */
 @media (max-width: 480px) {
-    #introText {
-        margin-top: 40vw; /* Add more margin to move the text down */
-    }
-
     #header {
-        padding-top: 40vh; /* Increase padding to move the text down */
+        padding-top: 60vh; /* Increase padding to move the text down */
     }
 }
