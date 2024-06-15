@@ -8,7 +8,7 @@
 body {
     background: #01011e;
     color: #fff;
-    font-size: 2vw;
+    font-size: 2vw;  
 }
 
 #header {
@@ -18,7 +18,6 @@ body {
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: contain;
-    padding-top: 50vh; /* Increase padding to move the text down */
 }
 
 .indexcontainer {
@@ -33,7 +32,7 @@ body {
 
 #name {
     width: 25%;
-    font-size: 4vw;
+    font-size: 4vw;  
     margin-right: 10%;
 }
 
@@ -52,7 +51,7 @@ nav ul li a {
     text-decoration: none;
     color: white;
     padding: 10px;
-    font-size: 1.5vw;
+    font-size: 1.5vw;  
 }
 
 nav ul li a:hover {
@@ -62,7 +61,8 @@ nav ul li a:hover {
 }
 
 #introText {
-    font-size: 1.4vw;
+    margin-top: 5vw;
+    font-size: 1.4vw;  
 }
 
 .highlighted {
@@ -86,26 +86,26 @@ nav ul li a:hover {
 .row {
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap; /* Ensure items don't wrap by default */
+    flex-wrap: nowrap; 
 }
 
 .about-col1 {
     flex-basis: 30%;
-    margin: 2vw;
+    margin: 2vw;  
     margin-top: 20px;
 }
 
 #hikeimg {
-    max-width: 100%;
+    max-width: 100%; 
     height: auto;
-    max-height: 300px; /* Add a max-height to control image size */
+    max-height: 300px; 
 }
 
 .about-col2 {
-    flex-basis: 65%; /* Reduce to provide better spacing */
-    margin: 2vw;
+    flex-basis: 65%; 
+    margin: 2vw; 
     margin-top: 20px;
-    font-size: 1.2vw;
+    font-size: 1.2vw; 
 }
 
 .tabtitles {
@@ -115,7 +115,7 @@ nav ul li a:hover {
 
 .tab-links {
     margin-right: 50px;
-    font-size: 1.8vw; /* Scales with viewport width */
+    font-size: 1.8vw; 
     cursor: pointer;
     font-weight: bold;
     position: relative;
@@ -143,7 +143,7 @@ nav ul li a:hover {
 
 .tabContents ul li span {
     color: #3baccf;
-    font-size: 1.4vw; /* Scales with viewport width */
+    font-size: 1.4vw;  
 }
 
 .tabContents {
@@ -203,7 +203,7 @@ button {
 .linktext {
     text-decoration: none;
     color: white;
-    font-size: 3vw; /* Scales with viewport width */
+    font-size: 3vw;  
 }
 
 .method1 {
@@ -286,7 +286,7 @@ button {
 }
 
 #gittxt {
-    font-size: 1.8vw; /* Scales with viewport width */
+    font-size: 1.8vw; 
 }
 
 #gitimg {
@@ -304,14 +304,14 @@ button {
 }
 
 #hacktext {
-    font-size: 1.8vw; /* Scales with viewport width */
+    font-size: 1.8vw; 
 }
 
 /* Title div styling */
 .title-div {
     margin-bottom: 40px;
     align-self: center;
-    font-size: 1.5vw; /* Scales with viewport width */
+    font-size: 1.5vw;  
 }
 
 /* Grid container styling */
@@ -379,7 +379,7 @@ p {
 /* Responsive Design */
 @media (max-width: 1024px) {
     .row {
-        flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+        flex-wrap: wrap; 
     }
 
     .about-col1, .about-col2 {
@@ -391,12 +391,12 @@ p {
     #hikeimg {
         max-width: 100%;
         height: auto;
-        max-height: 200px; /* Add a max-height to control image size */
-        margin-top: 20px; /* Add margin to move the image down */
+        max-height: 200px; 
+        margin-top: 20px;
     }
 
     .about-col2 {
-        font-size: 2vw; /* Adjust font size for better readability */
+        font-size: 2vw; 
     }
 
     .big-div {
@@ -408,9 +408,9 @@ p {
     }
 
     #indexNav {
-        flex-direction: row; /* Keep navbar items horizontal */
-        flex-wrap: wrap; /* Allow wrapping if necessary */
-        justify-content: center; /* Center items */
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center; 
     }
 
     #name {
@@ -418,13 +418,13 @@ p {
     }
 
     nav ul {
-        flex-direction: row; /* Keep navbar items horizontal */
-        flex-wrap: wrap; /* Allow wrapping if necessary */
-        justify-content: center; /* Center items */
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: center; 
     }
 
     nav ul li {
-        margin: 5px; /* Add margin between items */
+        margin: 5px;
     }
 
     nav ul li a {
@@ -464,9 +464,9 @@ p {
     }
 }
 
-/* Additional margin specifically for mobile view to avoid overlap */
+
 @media (max-width: 480px) {
-    #header {
-        padding-top: 60vh; /* Increase padding to move the text down */
+    #introText {
+        margin-top: 10vw; 
     }
 }
