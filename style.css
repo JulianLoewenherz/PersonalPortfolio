@@ -392,6 +392,7 @@ p {
         max-width: 100%;
         height: auto;
         max-height: 200px; /* Add a max-height to control image size */
+        margin-top: 20px; /* Add margin to move the image down */
     }
 
     .about-col2 {
@@ -460,5 +461,12 @@ p {
 
     #resumetitle {
         font-size: 5vw;
+    }
+}
+
+/* Additional margin specifically for mobile view to avoid overlap */
+@media (max-width: 480px) {
+    #introText {
+        margin-top: 10vw; /* Add more margin to move the text down */
     }
 }
