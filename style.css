@@ -18,7 +18,7 @@ body {
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: contain;
-    padding-top: 20vh; /* Add padding to move the text down */
+    padding-top: 30vh; /* Increase padding to move the text down */
 }
 
 .indexcontainer {
@@ -468,10 +468,10 @@ p {
 /* Additional margin specifically for mobile view to avoid overlap */
 @media (max-width: 480px) {
     #introText {
-        margin-top: 20vw; /* Add more margin to move the text down */
+        margin-top: 40vw; /* Add more margin to move the text down */
     }
 
     #header {
-        padding-top: 30vh; /* Increase padding to move the text down */
+        padding-top: 40vh; /* Increase padding to move the text down */
     }
 }
